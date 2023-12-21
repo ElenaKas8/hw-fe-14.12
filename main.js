@@ -203,9 +203,84 @@
 // 2000 --> 20
 //
 
-function century(year) {
-  const centuryNumber = Math.ceil(year / 100);
+// function century(year) {
+//   const centuryNumber = Math.ceil(year / 100);
 
-  // Возвращаем результат
-  return centuryNumber;
+//   // Возвращаем результат
+//   return centuryNumber;
+// }
+
+// //12 Bob needs a fast way to calculate the volume of a cuboid with three values: the length, width and height of the cuboid. Write a function to help Bob with this calculation.
+
+// class Kata {
+//   static getVolumeOfCuboid(length, width, height) {
+//      // Проверяем, что все входные значения являются положительными числами
+//     if (length <= 0 || width <= 0 || height <= 0) {
+//       throw new Error("Все значения длины, ширины и высоты должны быть положительными числами.");
+//     }
+
+//     // Вычисляем объем кубоида по формуле: V = lwh
+//     const volume = length * width * height;
+
+//     return volume;
+//   }
+// }
+
+// // Пример использования функции
+// const volume = Kata.getVolumeOfCuboid(3, 4, 5);
+// console.log("Объем кубоида:", volume);
+
+//*13 Return the Nth Even Number
+
+
+// Example(Input --> Output)
+
+// 1 --> 0 (the first even number is 0)
+// 3 --> 4 (the 3rd even number is 4 (0, 2, 4))
+// 100 --> 198
+// 1298734 --> 2597466
+// The input will not be 0.
+
+// function nthEven(n){
+//   return n * 2 - 2
+// }
+
+//*14 Игра НБА длится 48 минут (четыре четверти по 12 минут). Игроки обычно не играют в полную версию игры, подключаясь и выключаясь по мере необходимости. Ваша задача — экстраполировать очки игрока за игру, если он отыграл полные 48 минут.
+
+// Напишите функцию, которая принимает два аргумента: ppg (очки за игру) и mpg (минуты за игру) 
+// и возвращает прямую экстраполяцию количества ppg за 48 минут, округленного до ближайшей десятой. Верните 0, если 0.
+
+// Примеры:
+
+// pointsPer48(12, 20) // 28.8
+// pointsPer48(10, 10) // 48 
+// pointsPer48(5, 17) // 14.1 
+// pointsPer48(0, 0) // 0
+// Примечания:
+// Все входные данные будут либо целыми числами, либо числами с плавающей запятой.
+// Следуй за своей мечтой!
+
+
+// function pointsPer48(ppg, mpg) {
+//   if (mpg == 0) {
+//     return 0
+//   } 
+
+//   const pointsPer48 = ppg / mpg * 48
+
+  
+// }
+// pointsPer48(12, 20)
+// pointsPer48(10, 10)
+
+
+// 15-Учитывая неотрицательное целое число n, напишите функцию to_binary/ ToBinary, которая возвращает это число в двоичном формате.
+
+to_binary(1)  /* should return 1 */
+to_binary(5)  /* should return 101 */
+to_binary(11) /* should return 1011 */
+
+function to_binary(n) {
+  return n.toString(2)
 }
+
